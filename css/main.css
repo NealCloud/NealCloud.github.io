@@ -1,110 +1,178 @@
 
 body {
-	font-family: 'Lato', sans-serif;
+	font: 14px, "Lato", sans-serif;
 	color: #747704;
 }
+
 header, nav, footer, section, article, div {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-img{
-	width:100%;
+
+img {
+	width: 100%;
 }
-h1, h4{
+
+h1,
+h4 {
 	text-align: right;
-	margin:0 0 20px 0;
+	margin: 0 0 20px 0;
 	text-transform: uppercase;
 }
 /*my page breaks TODO:work on better color schemes*/
-hr{
+hr {
 	height: 8px;
-	background-color:#A8364C;
-	color:#A8364C;
+	background: #a8364c;
+	color: #a8364c;
 	border: 0 none;
 }
-.text-muted{
- 	color: #BCBBBB;
+
+.text-muted {
+	color: #bcbbbb;
 }
-.title-super{
-	font-size: 35px;
+
+.title-super {
+	font: 35px, "Lato", sans-serif;
 	text-align: center;
-	font-weight:300;
-	margin:0;
+	font-weight: 300;
+	margin: 0;
 }
 /*had to fix the logo in place with a block display*/
-.title-logo{
-	width:150px;
+.title-logo {
+	width: 150px;
 	height: 150px;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin: auto;
 }
+
 .content {
 	display: flex;
 	flex-wrap: wrap;
 }
-.box{
+
+.box {
 	width:100%;
 }
-.nproject{
+
+.nproject {
 	text-align: center;
-	margin-top: 10px;
-}
-/*my project images TODO:find better name*/
-.proji{
-	height:300px;
+	margin: 10px 0 0 0;
 }
 
+.nimage {
+	height: 300px;
+}
 /*responsive css styles for larger than a phone*/
 @media screen and (min-width: 501px) and (max-width: 800px){
-	.ntitle{
+	.ntitle {
 		width: 70%;
 	}
-	.nlogo{
-		width:30%;
+
+	.nlogo {
+		width: 30%;
 	}
 	/*displays 2 projects in a row */
-	.nproject{
-		width:calc((100% - 10px) / 2);
-		margin-right: 10px;
+	.nproject {
+		width: calc((100% - 10px) / 2);
+		margin: 0 10px 0 0;
 	}
 	/*I don't know why odd works mabey it starts at counting at 0*/
-	.nproject:nth-child(odd){
-		margin-right: 0px;
+	.nproject:nth-child(odd) {
+		margin: 0;
 	}
 	/*move my title back to straight*/
-	.title-super{
-		font-size: 60px;
+	.title-super {
+		font: 60px;
 		text-align: right;
 	}
 }
 @media screen and (min-width: 801px){
 	.content {
-		width:100%;
+		width: 100%;
 		max-width: 900px;
 		margin: 0 auto;
-		display: flex;
-	  	flex-wrap: wrap;
 	}
-	.ntitle{
+	.ntitle {
 		width: 80%;
 	}
-	.nlogo{
-		width:20%;
+	.nlogo {
+		width: 20%;
 		height: 100px;
 	}
 	/*displays 3 projects in a row*/
-	.nproject{
-		width:calc((100% - 20px) / 3);
-		margin-right: 10px;
+	.nproject {
+		width: calc((100% - 20px) / 3);
+		margin: 0 10px 0 0;
 	}
-	.nproject:last-child{
-		margin-right: 0px;
+	.nproject:last-child {
+		margin: 0;
 	}
-	.title-super{
+	.title-super {
 		font-size: 60px;
 		text-align: right;
 	}
-	h4{
+	h4 {
 		font-size: 25px;
 	}
+}
+
+
+/*grid test*/
+.grid {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.row {
+	width: 100%;
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
 }
