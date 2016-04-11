@@ -1,15 +1,11 @@
-;(function(){
-
-			// Menu settings
-			$('#menuToggle, .menu-close').on('click', function(){
-				$('#menuToggle').toggleClass('active');
-				$('body').toggleClass('body-push-toleft');
-				$('#theMenu').toggleClass('menu-open');
-			});
 
 
-
-})(jQuery)
+    // Menu settings
+$('#menuToggle, .menu-close').on('click', function(){
+    $('#menuToggle').toggleClass('active');
+    $('body').toggleClass('body-push-toleft');
+    $('#theMenu').toggleClass('menu-open');
+});
 
 var screenWidth = 500;
 
@@ -26,7 +22,7 @@ startParallaxPosition(cloudArray);
 window.onscroll = function(e){ scrollEvent(e); };
 var cloudFlag = true;
 function scrollEvent(e){
-	console.log(pageYOffset);
+	//console.log(pageYOffset);
 	if(pageYOffset < 1900 && cloudFlag){
 		scrollCloud()
 	}
@@ -58,4 +54,22 @@ function startParallaxPosition(array){
 		$(array[i].id).css("top", array[i].y + "px");
 	}
 }
+
+var ref = new Firebase("https://nealcloud.firebaseio.com/address");
+
+ref.once("value", function(snap) {
+    console.log("snap", snap.val());
+    var email = "cloud@gmail.com";
+    var number = -2505;
+    $("#phone").text(snap.val().number);
+    $("#email").text(snap.val().email);
+    $("#phone2").text(number);
+    $("#email2").text(email);
+},
+function(error){
+    console.log(error);
+});
+
+
+
 
