@@ -7,70 +7,81 @@
     <meta name="author" content="">
 
     <title>Neal's Portfolio</title>
+    <!--<link rel="shortcut icon" href="assets/ico/favicon.png">-->
 
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/imageflip.css">
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+<body>
 
 <!-- Menu -->
 <nav class="menu" id="theMenu">
     <div class="menu-wrap">
+
         <h1 class="logo"><a href="index.html#home">Neal Cloud</a></h1>
+
         <i class="icon-remove menu-close"></i>
+
         <a href="#home" class="smoothScroll">Home</a>
         <a href="#about" class="smoothScroll">About</a>
         <a href="#portfolio" class="smoothScroll">Portfolio</a>
         <a href="#contact" class="smoothScroll">Contact</a>
-        <a href="http://www.github.com/nealcloud" target="_blank"><i class="icon-github"></i></a>
 
-        <a href="https://www.linkedin.com/in/nealcloud" target="_blank"><i class="icon-linkedin"></i></a>
-        <a href="https://www.facebook.com/nealncloud" target="_blank"><i class="icon-facebook"></i></a>
-        <a href="#"><i class="icon-envelope"></i></a>
+        <a href="http://www.github.com/nealcloud" target="_blank">
+            <i class="icon-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nealcloud" target="_blank">
+            <i class="icon-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/nealncloud" target="_blank">
+            <i class="icon-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="icon-envelope"></i>
+        </a>
     </div>
-
     <!-- Menu button -->
     <div id="menuToggle"><i class="icon-reorder"></i></div>
 </nav>
 
-<section id="home" name="home"></section>
-<div id="headerwrap"  class="sky" >
-    <div class="container">
-        <div class="logo">
-            <img src="assets/img/logo.png">
-        </div>
-
-        <br>
-        <div class="row">
-            <h1>NEAL CLOUD</h1>
-            <br>
-            <h3>Web Developer</h3>
-            <!--<div class="sky">-->
-                <div class="moon"></div>
-                <div class="clouds_one"></div>
-                <div class="clouds_two"></div>
-                <div class="clouds_three"></div>
-            <!--</div>-->
-           <!-- <div class="cloud" id="cloud1"><img src="assets/img/cloud_one.png" alt=""></div>-->
-            <!--<div class="cloud" id="cloud2"><img src="assets/img/cloud_two.png" alt=""></div>-->
-            <!--<div class="cloud" id="cloud3"><img src="assets/img/cloud_three.png" alt=""></div>-->
-
-            <br>
-            <br>
-            <div class="col-lg-6 col-lg-offset-3">
+<section id="home" name="home">
+    <div id="headerwrap"  class="sky" >
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo.png">
             </div>
-        </div>
-    </div><!-- /container -->
-</div><!-- /headerwrap -->
 
+            <br>
+            <div class="row">
+                <h1>NEAL CLOUD</h1>
+                <br>
+                <h3>Web Developer</h3>
+                <!--<div class="sky">-->
+                    <div class="moon"></div>
+                    <div class="clouds_one"></div>
+                    <div class="clouds_two"></div>
+                    <div class="clouds_three"></div>
+                <!--</div>-->
+               <!-- <div class="cloud" id="cloud1"><img src="assets/img/cloud_one.png" alt=""></div>-->
+                <!--<div class="cloud" id="cloud2"><img src="assets/img/cloud_two.png" alt=""></div>-->
+                <!--<div class="cloud" id="cloud3"><img src="assets/img/cloud_three.png" alt=""></div>-->
+
+                <br>
+                <br>
+                <div class="col-lg-6 col-lg-offset-3">
+                </div>
+            </div>
+        </div><!-- /container -->
+    </div><!-- /headerwrap -->
+</section>
     <!--<div class="container sky">-->
         <!--<div class="row">-->
             <!--<div id="cloudHeight">-->
@@ -85,83 +96,96 @@
 
 <section id="about" name="about" class="adjust">
 
-    <div class="container">
-        <div class="row">
-            <h3>ABOUT ME</h3>
-            <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i
-                    class="icon icon-circle"></i></p>
+    <h3>ABOUT ME</h3>
+    <p class="centered">
+        <i class="icon icon-circle"></i>
+        <i class="icon icon-circle"></i>
+        <i class="icon icon-circle"></i>
+    </p>
 
-            <div class="col-lg-6 col-lg-offset-3">
+    <p> I am a junior web developer.</p>
+    <p> I have found a new passion for creation in coding.</p>
+    <p>Read about my projects on my <a href="http://nealcloud.github.com/devblog">Dev Blog</a></p>
+    <p><small>made with angular and firebase</small></p>
 
-                <p> I am a junior web developer.</p>
-                <p> I have found a new passion for creation in coding.</p>
-                <p>Read about my projects on my <a href="http://nealcloud.github.com/devblog">Dev Blog</a></p>
-                <p><small>made with angular and firebase</small></p>
-
-            </div>
-        </div>
-    </div>
 </section>
 
 <section id="portfolio"  class="adjust" name="portfolio">
-    <div class="container ">
 
-        <div class="row centered">
             <h3>SOME PROJECTS</h3>
-            <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i
-                    class="icon icon-circle"></i></p>
-
-            <div class="col-lg-6 col-lg-offset-3">
-                <div id="projectCaro" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-
-                        <div class="item active centered">
-                            <a href="http://www.nealcloud.com/hacka-tictactoe-athon">
-                                <img class="img-responsive" src="assets/img/c1.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item centered">
-                            <img class="img-responsive" src="assets/img/c2.png" alt="">
-                        </div>
-                        <div class="item centered">
-                            <img class="img-responsive" src="assets/img/c3.png" alt="">
-                        </div>
-
-                        <a class="left carousel-control" href="#projectCaro" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
+            <p>
+                <i class="icon icon-circle"></i>
+                <i class="icon icon-circle"></i>
+                <i class="icon icon-circle"></i>
+            </p>
+            <div>
+                <h3>Hacka Toe</h3>
+            </div>
+            <div id="grid" class="main" >
+                <div class="view">
+                    <div class="view-back">
+                        <span>Team</span>
+                        <span>Live Demo</span>
+                        <a href="/hacka-tictactoe-athon/">
+                            →
                         </a>
-                        <a class="right carousel-control" href="#projectCaro" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                        <span>Code Repo</span>
+                        <a href="https://github.com/NealCloud/hacka-tictactoe-athon" target="_blank">
+                            <i class="icon-github"></i>
                         </a>
+
                     </div>
-                    <br>
-                    <br>
+                    <img src="assets/img/c1.png" />
 
                 </div>
-            </div><!-- col-lg-8 -->
-        </div><!-- row -->
-    </div><!-- container -->
+                <div>
+                    <h3>Morty Match</h3>
+                </div>
+                <div class="view">
+                    <div class="view-back">
+                        <span>Solo</span>
+                        <span>Live Demo</span>
+                        <a href="/hacka-tictactoe-athon/">
+                            →
+                        </a>
+                        <span>Code Repo</span>
+                        <a href="https://github.com/NealCloud/mortymatch" target="_blank">
+                            <i class="icon-github"></i>
+                        </a>
+                    </div>
+                    <img src="assets/img/c2.png" />
+
+                </div>
+                <div>
+                    <h3>Story Time</h3>
+                </div>
+                <div class="view">
+                    <div class="view-back">
+                        <span>Team</span>
+                        <span>Code Repo</span>
+                        <a href="https://github.com/kkennethlee/c7_blog_project" target="_blank">
+                            <i class="icon-github"></i>
+                        </a>
+
+                    </div>
+                    <img src="assets/img/c3.png" />
+                </div>
+            </div><!-- portfolio grid -->
 </section>
 
 <section id="contact" class="adjust" name="contact">
-
-    <div class="container">
-        <div class="row">
             <h3>CONTACT ME</h3>
-            <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i
-                    class="icon icon-circle"></i></p>
+            <p>
+                <i class="icon icon-circle"></i>
+                <i class="icon icon-circle"></i>
+                <i class="icon icon-circle"></i>
 
+            </p>
             <div class="col-lg-6 col-lg-offset-3">
-
                 <h4 id="address">Orange County, CA</h4><br>
-                <h4 id="phone"></h4><h4 class="hidden">#@@@#%</h4><!--323--><h4 id="phone2"></h4><br>
-                <h4 id="email"></h4><h4 class="hidden">^$$^#^$</h4><!--@yahoo.com--><h4 id="email2"></h4>
+                <h4 id="phone"></h4><h4 class="hidden">%&%$</h4><!--323--><h4 id="phone2"></h4><br>
+                <h4 id="email"></h4><h4 class="hidden">@#$%^!</h4><!--@yahoo.com--><h4 id="email2"></h4>
             </div>
-        </div>
-    </div>
 </section>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

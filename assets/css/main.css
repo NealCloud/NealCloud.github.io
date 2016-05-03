@@ -36,7 +36,7 @@ p {
 a {
     color: #f85c37;
     word-wrap: break-word;
-
+	text-decoration: none;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -116,14 +116,29 @@ a:after {
 	margin-top: 15px;
 
 }
+/*main*/
 
+.main{
+
+	padding: 10px 0;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
 
 /* Footer Wrap */
 
 .adjust {
 	background: #1a1a1a;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	text-align: center
 }
 
@@ -153,6 +168,7 @@ a:after {
 /* MENU CONF*/
 
 .menu {
+	background: #1a1a1a;
 	position: fixed;
 	right: -200px;
 	width: 260px;
@@ -534,4 +550,7 @@ body {
 	}
 }
 
+.hidden{
+	display: none;
+}
 
