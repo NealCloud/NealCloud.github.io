@@ -1,15 +1,14 @@
 
-.menu {
-    -moz-filter: url("#shadowed-goo");
+.menu {    
   -webkit-filter: url("#shadowed-goo");
-          filter: url("#shadowed-goo");
+/*          filter: url("#shadowed-goo");*/
 }
 
 .menu-item {
   background: #ffc107;
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 60px;
   margin-left: -40px;
   position: absolute;
   top: 20px;
@@ -20,6 +19,7 @@
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform ease-out 200ms;
+    -moz-transition: -moz-transform ease-out 200ms;
   transition: -moz-transform ease-out 200ms;
   transition: -webkit-transform ease-out 200ms;
   transition: transform ease-out 200ms;
@@ -182,10 +182,10 @@
   -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
           transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.menu-open:checked ~ .menu-item:nth-child(3) {
-    height: 80px;
     width: 80px;
+    height: 80px;
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {    
   -webkit-transition-duration: 170ms;
     -moz-transition-duration: 170ms;
           transition-duration: 170ms;
