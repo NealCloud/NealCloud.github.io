@@ -44,8 +44,7 @@
     height: 100%;
     position: absolute;
     right: 0;
-
-    background: linear-gradient(#293040, #27675b);
+    background: #000;
     z-index: 0;
 }
 
