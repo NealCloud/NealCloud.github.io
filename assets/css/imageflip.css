@@ -44,7 +44,7 @@
     height: 100%;
     position: absolute;
     right: 0;
-    background: #666;
+    background: #000;
     z-index: 0;
 }
 
@@ -96,8 +96,8 @@
 }
 
 .view-back a:hover {
-    color: #ff2a2f;
-    border-color: #ff2025;
+    color: #53ff28;
+    border-color: #2dff32;
 }
 
 .view-back span[data-icon]:before {

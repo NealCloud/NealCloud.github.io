@@ -11,19 +11,24 @@
 
     <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/imageflip.css">
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href="assets/css/mobile.css">
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    
 
 </head>
 
 <body>
 
 <!-- Menu -->
-<nav class="menu" id="theMenu">
+<!--<nav class="menu" id="theMenu">-->
+<!--
     <div class="menu-wrap">
 
         <h1 class="logo"><a href="index.html#home">Neal Cloud</a></h1>
@@ -48,10 +53,57 @@
             <i class="icon-envelope"></i>
         </a>
     </div>
-    <!-- Menu button -->
-    <div id="menuToggle"><i class="icon-reorder"></i></div>
+-->
+    
+
+<nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+      <div class='poof1'></div>
+      <div class='poof2'></div>
+      <div class='poof3'></div>
+<!--      <div class='poof4'>4</div>-->
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+  
+  <a href="#home" class="smoothScroll menu-item"> Home</a>  
+  <a href="#about" class="smoothScroll menu-item"> About</a>
+  <a href="#portfolio" class="smoothScroll menu-item"> Projects</a>
+  <a href="#contact" class="smoothScroll menu-item"> Contact</a>
+  
 </nav>
 
+
+<!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+          
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+    
+    <!-- Menu button -->
+<!--    <div id="menuToggle"><i class="icon-reorder"></i></div>-->
+    
+
+
+    
+    
 <section id="home" name="home">
     <div id="headerwrap"  class="sky" >
         <div class="container">
@@ -124,7 +176,6 @@
             <div id="grid" class="main" >
                 <div class="view">
                     <div class="view-back">
-                        <span>Solo</span>
                         <span>Live Demo</span>
                         <a href="https://NealCloud.github.io/guess/" target="_blank">
                             →
@@ -143,7 +194,6 @@
                 </div>
                 <div class="view">
                     <div class="view-back">
-                        <span>Team</span>
                         <span>Live Demo</span>
                         <a href="https://NealCloud.github.io/dunk-four/"  target="_blank">
                             →
@@ -157,11 +207,10 @@
 
                 </div>
                 <div>
-                    <h3>Story Time</h3>
+                    <h3>Story Press</h3>
                 </div>
                 <div class="view">
                     <div class="view-back">
-                        <span>Team</span>
                         <span>Live Demo</span>
                         <a href="http://nealcloud.com/storypress/" target="_blank">
                             →
