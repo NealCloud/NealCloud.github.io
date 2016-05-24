@@ -157,6 +157,14 @@ a:after {
     padding: 3px;
 }
 
+#contact a i{
+	font-size: 44px;
+	margin-right: .8em;
+}
+
+.mobilelinks{
+	display: none;
+}
 .adjust p {
 	font-size: 20px;
 	color: #f2f2f2;

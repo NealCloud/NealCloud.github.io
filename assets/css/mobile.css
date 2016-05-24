@@ -54,4 +54,14 @@
     -moz-transform: translate3d(320px, 0, 0);
           transform: translate3d(320px, 0, 0);
 }
+
+.mobilelinks{
+    display: block;
+}
+.mobilelinks i{
+    font-size: 48px;
+}
+    .mobilelinks:hover i{
+        color: teal;
+    }
 }
