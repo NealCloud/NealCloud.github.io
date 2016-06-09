@@ -38,6 +38,13 @@ p {
     text-align: center;
 }
 
+.fircon{
+	width: 60px;
+	height: auto;
+	position: relative;
+	top: 10px;
+}
+
 /* Links */
 a {
     color: #f85c37;
